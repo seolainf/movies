@@ -1,11 +1,6 @@
 @mixin maxWidth($value) {
   @media screen and (max-width: $value) {
     @content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
   }
 }
 @mixin flex($align-items: center, $justify-content: center) {

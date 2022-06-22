@@ -1,0 +1,47 @@
+@import "../../scss/index.scss";
+
+.moviesCrad {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  color: $whiteColor;
+  &__info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s linear;
+  }
+  &__title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: $blackColor, $alpha: 0.9);
+    &:hover {
+      color: $redColor;
+    }
+  }
+  &__status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.7rem;
+    padding: 3px;
+    color: $whiteColor;
+    background-color: $redColor;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+}

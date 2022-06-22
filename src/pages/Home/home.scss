@@ -1,0 +1,25 @@
+@import "../../scss/index.scss";
+
+.home {
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  &__main {
+    width: calc(100% - 25%);
+    @include maxWidth(1024px) {
+      width: 100%;
+    }
+  }
+  &__sidebar {
+    width: calc(100% - 75%);
+    height: 100%;
+    margin-left: 20px;
+    @include maxWidth(1024px) {
+      display: none;
+    }
+  }
+}

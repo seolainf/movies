@@ -1,24 +1,26 @@
 @import "../../scss/index.scss";
 
 .header {
+  padding: 0 80px;
   position: relative;
   height: 70px;
   @include flex(center, space-between);
   background-color: $headerBg;
+  @include maxWidth(1024px) {
+    padding: 0 30px;
+  }
   &__logo {
     width: 90px;
-    height: 100%;
-    padding: 10px 10px 10px 30px;
+    height: 50px;
     @include flex();
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   &__nav {
     height: 100%;
-    padding: 0 30px;
   }
   &__menu {
     height: 100%;
@@ -27,13 +29,14 @@
       width: max-content;
       position: relative;
       height: 100%;
+      color: $textColor;
       padding: 10px 0;
     }
   }
   &__navlink {
     width: 100%;
     height: 100%;
-    color: $textColor;
+
     @include flex();
     padding: 0 15px;
     font-size: 1.1rem;

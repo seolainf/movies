@@ -6,11 +6,11 @@ import "./header.scss";
 const Header = () => {
   return (
     <div className="header">
-      <div className="header__logo">
-        <Link to={"/"} className="link">
+      <Link to={"/"} className="link">
+        <div className="header__logo">
           <img src={logo} alt="" />
-        </Link>
-      </div>
+        </div>
+      </Link>
       <div className="header__nav">
         <div className="header__menu">
           {menuData.map((menu) => (

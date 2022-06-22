@@ -8,13 +8,13 @@ body {
   background-color: $blackColor;
 
   &::-webkit-scrollbar {
-    width: 7px;
+    width: 5px;
   }
   &::-webkit-scrollbar-track {
     background-color: $headerBg;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $redColor;
+    background-color: rgba($color: $redColor, $alpha: 0.5);
     border-radius: 20px;
   }
 }
@@ -46,7 +46,10 @@ li {
 }
 .main {
   position: relative;
-  padding: 20px 30px;
+  padding: 20px 80px;
+  @include maxWidth(1024px) {
+    padding: 20px 30px;
+  }
 }
 @each $var in $countCol {
   .grid-col-#{$var} {
