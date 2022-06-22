@@ -4,7 +4,6 @@ import Section from '../Section/Section'
 import './sidebar.scss'
 
 const Sidebar = ({ data, title }) => {
-    console.log(data);
     return (
         <div className='sidebar'>
             <Section title={title} fs={1.2} />
