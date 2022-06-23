@@ -85,7 +85,7 @@ const Single = () => {
       </div>
       <div className="single__recom">
         <Section title={"Phim được đề xuất"} fs={2} />
-        <Grid col={5} mdCol={3} smCol={2} gap={30}>
+        <Grid col={5} mdCol={3} smCol={1} gap={30}>
           {recomMovies && recomMovies.map((item) => <MoviesCard key={item.id} data={item} />)}
         </Grid>
       </div>

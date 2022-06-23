@@ -1,0 +1,43 @@
+@import "../../scss/index.scss";
+
+.watch {
+  position: relative;
+  &__video {
+    width: 100%;
+    height: 700px;
+    padding: 20px 50px;
+    @include flex();
+    @include maxWidth(1024px) {
+      padding: 20px 30px;
+      height: 500px;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      outline: none;
+    }
+  }
+  &__list {
+    position: relative;
+    padding: 20px 50px;
+    @include flex(center, flex-start);
+    flex-wrap: wrap;
+    @include maxWidth(1024px) {
+      padding: 20px 30px;
+    }
+    &_item {
+      color: $textColor;
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      @include flex();
+      background-color: $headerBg;
+      border-radius: 50%;
+      cursor: pointer;
+      &.active {
+        background-color: $redColor;
+        color: $whiteColor;
+      }
+    }
+  }
+}

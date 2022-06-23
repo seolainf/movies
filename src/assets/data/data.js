@@ -101,19 +101,19 @@ export const menuData = [
   },
   {
     id: 4,
-    title: "Phim bộ",
+    title: "phim bộ",
     path: "/category/phimbo",
     Children: [],
   },
   {
     id: 5,
-    title: "Phim lẻ",
+    title: "phim lẻ",
     path: "/category/phimle",
     Children: [],
   },
   {
     id: 6,
-    title: "Phim chiếu rạp",
+    title: "phim chiếu rạp",
     path: "/category/phimchieurap",
     Children: [],
   },
