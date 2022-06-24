@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { getMoviesByCategory } from "./firebase/firebaseFunc";
 import Home from "./pages/Home/Home";
@@ -34,10 +35,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies/:slug" element={<Single />} />
-          <Route path="/watch/:slug" element={<Watch />} />
+          <Route path="/watch-movies/:slug" element={<Watch />} />
           <Route path="/category/*" element={<Movies data={moviesCateg} title={type} />} />
         </Routes>
       </main>
+      <div className="app__footer">
+        <Footer />
+      </div>
     </div>
   );
 }

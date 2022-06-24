@@ -36,7 +36,7 @@ const Single = () => {
         <div className="single__moviesImg">
           <img src={movies.images} alt="" />
           <div className="single__moviesBtn">
-            <Link className="link" to={`/watch/${movies.slug}`}>
+            <Link className="link" to={`/watch-movies/${movies.slug}`}>
               <span>Xem phim</span>
             </Link>
           </div>
@@ -76,7 +76,12 @@ const Single = () => {
             <small>Quốc gia:</small> <span>{movies.country}</span>
           </div>
           <div className="single__moviesInfo_item">
-            <small>Thể loại:</small> <span>{movies.categories && movies.categories[1]}</span>
+            <small>Thể loại:</small>{" "}
+            <span>
+              {movies.categories && movies.categories?.length >= 2
+                ? movies.categories && movies.categories[1]
+                : movies.categories && movies.categories[0]}
+            </span>
           </div>
           <div className="single__moviesInfo_item">
             <small>Nội dung:</small> <p>{movies.desc}</p>

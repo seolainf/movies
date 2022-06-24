@@ -34,3 +34,8 @@ export const randomMovies = async (count) => {
   const start = Math.floor(Math.random() * (max - min) + min);
   return data.slice(start, start + count);
 };
+export const getSearchMovies = async (text) => {
+  const data = await getAllMovies();
+  const searchFil = data.filter(({ title }) => title.indexOf(text) !== -1);
+  return searchFil;
+};

@@ -1,0 +1,10 @@
+@import "../../scss/index.scss";
+
+.footer {
+  position: relative;
+  height: 100px;
+  padding: 20px 80px;
+  color: $textColor;
+  @include flex();
+  background-color: $headerBg;
+}
