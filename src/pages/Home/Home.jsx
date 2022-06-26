@@ -3,7 +3,7 @@ import Grid from "../../components/Grid/Grid";
 import MoviesCard from "../../components/MoviesCard/MoviesCard";
 import Section from "../../components/Section/Section";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import { getMoviesByCategory, getSearchMovies } from "../../firebase/firebaseFunc";
+import { getMoviesByCategory } from "../../firebase/firebaseFunc";
 import "./home.scss";
 
 const Home = () => {
