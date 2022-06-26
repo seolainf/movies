@@ -39,5 +39,10 @@
         color: $whiteColor;
       }
     }
+    &_title {
+      font-size: 1.2rem;
+      color: $textColor;
+      margin-right: 20px;
+    }
   }
 }

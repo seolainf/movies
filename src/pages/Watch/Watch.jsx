@@ -31,6 +31,7 @@ const Watch = () => {
         <video src={video} controls />
       </div>
       <div className="watch__list">
+        <span className="watch__list_title">VietSub: </span>
         {movies.categories?.indexOf("phim lẻ") === -1 ? (
           movies.videos?.map((video, i) => (
             <div
